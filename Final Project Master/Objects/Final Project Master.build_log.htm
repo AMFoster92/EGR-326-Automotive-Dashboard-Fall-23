@@ -1,0 +1,147 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Aaron Foster, GVSU, LIC=AN0AM-GSYC7-8JP6N-BVDQ4-EABNQ-K7D07
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Community  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\ThinkyCrow\OneDrive\Documents\EGR326\FPM\Final Project Master.uvprojx
+Project File Date:  12/09/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(2): warning: In file included from...
+./Button.h(28): warning: // comments are not allowed in this language [-Wcomment]
+extern void EXTI4_IRQHandler(void);     // Increment number of presses
+                                        ^
+main.c(3): warning: In file included from...
+./Debounce.h(12): warning: In file included from...
+./Encoder.h(28): warning: // comments are not allowed in this language [-Wcomment]
+void EXTI0_IRQHandler(void);    // CLK interrupt for rotation
+                                ^
+main.c(4): warning: In file included from...
+./Encoder.h(28): warning: // comments are not allowed in this language [-Wcomment]
+void EXTI0_IRQHandler(void);    // CLK interrupt for rotation
+                                ^
+main.c(6): warning: In file included from...
+./HallEffect.h(8): warning: // comments are not allowed in this language [-Wcomment]
+#define MOTOR_DIAMETER  1 // motor gear radius in inches
+                          ^
+./HallEffect.h(22): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+main.c(7): warning: In file included from...
+./I2C.h(18): warning: // comments are not allowed in this language [-Wcomment]
+#define TRISE_MAX               0x11                    //Max Rise Time - 1000ns rise / 16MHz
+                                                        ^
+main.c(8): warning: In file included from...
+./RTC.h(3): warning: // comments are not allowed in this language [-Wcomment]
+//#include "USART.h"
+^
+./RTC.h(80): warning: no newline at end of file [-Wnewline-eof]
+void Temp_to_Dec(uint8_t, uint8_t);
+                                   ^
+main.c(9): warning: In file included from...
+./Sonar.h(2): warning: // comments are not allowed in this language [-Wcomment]
+//#define GPIO_LED              GPIOB
+^
+main.c(11): warning: In file included from...
+./Timer.h(15): warning: // comments are not allowed in this language [-Wcomment]
+#define MS                              16000   //Milliseconds
+                                                ^
+main.c(13): warning: In file included from...
+./UnipolarStepperMotor.h(11): warning: // comments are not allowed in this language [-Wcomment]
+//#define MAX_SEQUENCES                                         512
+^
+main.c(14): warning: In file included from...
+./EEPROM.h(3): warning: // comments are not allowed in this language [-Wcomment]
+///#include "USART.h"
+^
+main.c(44): warning: // comments are not allowed in this language [-Wcomment]
+#define DIAMETER                                        6 * 12.00 //inches
+                                                                  ^
+main.c(902): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                                                for(int i = 0; i < TIME_SIZE; i++)
+                                                    ^
+main.c(902): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(926): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+                                                for(int i = 0; i < DATE_SIZE; i++)
+                                                    ^
+main.c(926): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(12): warning: In file included from...
+./Watchdog.h(15): warning: unused function 'Kick_The_Dog' [-Wunused-function]
+static void Kick_The_Dog(void);
+            ^
+18 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=28168 RO-data=1176 RW-data=12 ZI-data=1988  
+".\Objects\Final Project Master.axf" - 0 Error(s), 18 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.ARM_Compiler.1.7.2.pack
+                Keil.ARM_Compiler.1.7.2
+                Keil ARM Compiler extensions for ARM Compiler 5 and ARM Compiler 6
+   * Component: STDERR Variant: ITM Version: 1.2.0
+   * Component: STDIN Variant: ITM Version: 1.2.0
+   * Component: STDOUT Variant: ITM Version: 1.2.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil.STM32F4xx_DFP.2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/ThinkyCrow/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/ThinkyCrow/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil.ARM Compiler::Compiler:I/O:STDERR:ITM:1.2.0
+      Source file:   Source/retarget_io.c
+
+   * Component: Keil.ARM Compiler::Compiler:I/O:STDIN:ITM:1.2.0
+      Source file:   Source/retarget_io.c
+
+   * Component: Keil.ARM Compiler::Compiler:I/O:STDOUT:ITM:1.2.0
+      Source file:   Source/retarget_io.c
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK/Device/Source/ARM/STM32F446xx_OPT.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f446xx.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>

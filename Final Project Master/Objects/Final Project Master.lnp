@@ -1,0 +1,22 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\main.o"
+".\objects\button.o"
+".\objects\debounce.o"
+".\objects\eeprom.o"
+".\objects\encoder.o"
+".\objects\gpioinit.o"
+".\objects\halleffect.o"
+".\objects\i2c.o"
+".\objects\rtc.o"
+".\objects\sonar.o"
+".\objects\systick.o"
+".\objects\timer.o"
+".\objects\unipolarsteppermotor.o"
+".\objects\watchdog.o"
+".\objects\retarget_io.o"
+".\objects\startup_stm32f446xx.o"
+".\objects\system_stm32f4xx.o"
+--strict --scatter ".\Objects\Final Project Master.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Final Project Master.map" -o ".\Objects\Final Project Master.axf"
